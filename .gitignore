@@ -1,0 +1,44 @@
+# Pré-requisitos
+*.d
+
+# Arquivos compilados (Object files)
+*.o
+*.obj
+
+# Bibliotecas (Libraries)
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+
+# Executáveis
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+# Executáveis de Linux geralmente não tem extensão, então o ideal 
+# é ignorar as pastas de output onde eles são gerados.
+
+# Pastas de build geradas
+build/
+bin/
+out/
+Debug/
+Release/
+
+# Arquivos de IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*~
+*.cbp
+*.depend
+*.layout
+
+# Arquivos específicos de SO
+.DS_Store
+Thumbs.db
