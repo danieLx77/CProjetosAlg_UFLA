@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits>
 #include <string>
 #include <vector>
 using namespace std;
@@ -52,12 +51,13 @@ int main() {
     while (t--) {
         int n;
         cin >> n;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // consumir o restante da linha
 
         vector<string> contas(n);
 
         for (int i = 0; i < n; i++) {
-            getline(cin, contas[i]);
+            string a, b, c, d, e, f;
+            cin >> a >> b >> c >> d >> e >> f;
+            contas[i] = a + " " + b + " " + c + " " + d + " " + e + " " + f;
         }
 
         if (contas.empty()) {
@@ -82,8 +82,7 @@ int main() {
         }
 
         cout << atual << " " << contador << "\n";
-
-        if (t) cout << "\n";
+        cout << "\n";
     }
 
     return 0;
